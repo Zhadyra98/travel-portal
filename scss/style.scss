@@ -1,0 +1,28 @@
+@import "_header";// импортируем таким образом воторостипенные файлы так, чтобы он не создавал каждый раз новый файл как header.css и т,д
+@import "_nullstyle";
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100%;
+}
+[class*="__container"] {
+    max-width: 1230px;
+    margin: 0px auto;
+    padding: 0px 15px;
+
+    @media(max-width: 1230px){
+        max-width: 970px;
+    }
+    @media(max-width: 992px){
+        max-width: 750px;
+    }
+    @media(max-width: 767px){
+        max-width: none;
+    }
+}
