@@ -2,8 +2,13 @@
 @import "_nullstyle";
 
 body{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 15px;
+    font-family: Aleo;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+}
+body._lock {
+    overflow: hidden;
 }
 .wrapper{
     display: flex;
