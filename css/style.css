@@ -387,6 +387,79 @@ input::placeholder {
   }
 }
 
+.perfect_trip__content {
+  text-align: center;
+  margin: 80px auto 97px;
+}
+@media (max-width: 767px) {
+  .perfect_trip__content {
+    margin: 20px auto 20px;
+  }
+}
+
+.section__heading {
+  font-family: "Red Hat Text";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  color: #F2785C;
+  margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .section__heading {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+}
+
+.perfect_trip__items {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1230px) {
+  .perfect_trip__items {
+    justify-content: space-between;
+  }
+}
+
+.perfect_trip__item1 {
+  flex: 1 1 33.33%;
+}
+
+.perfect_trip__item2 {
+  flex: 1 1 33.33%;
+}
+
+.perfect_trip__item3 {
+  flex: 1 1 33.33%;
+}
+
+.perfect_trip__item__img {
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .perfect_trip__item__img {
+    max-width: 70px;
+    max-height: 70px;
+    margin-bottom: 19px;
+  }
+}
+
+.perfect_trip__item__text {
+  font-family: "Aleo";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0D606F;
+}
+@media (max-width: 767px) {
+  .perfect_trip__item__text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
 body {
   font-family: Aleo;
   font-style: normal;
