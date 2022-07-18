@@ -11,7 +11,6 @@
     font-size: 40px;
     line-height: 53px;
     color: #F2785C;
-    margin-bottom: 40px;
     @media(max-width: 767px){
         font-size: 14px;
         line-height: 19px;
@@ -21,6 +20,7 @@
 .perfect_trip__items {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
     @media(max-width: 1230px){
         justify-content: space-between;
     }

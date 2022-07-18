@@ -12,3 +12,30 @@ document.querySelectorAll(".menu__link")
         iconMenu.classList.remove('active');
         menuBody.classList.remove('active');
     }))
+
+
+
+/* =========================Slider ============================*/
+
+let slides = document.querySelectorAll('.single__slide');
+let slider = [];
+for(let i=0; i<slides.length; i++){
+    slider[i] = slides[i].src;
+    slides[i].remove();
+}
+console.log(slider);
+
+let step = 0;
+let offset = 0;
+
+function draw() {
+    let img = document.createElement('img');
+    img.src = slider[step];
+    img.classList.add('single-slide');
+    img.style.left = offset*860 +'px';
+    document.querySelector('.slide').append(img);
+    step++;
+    offset=1;
+}
+
+draw();draw();
