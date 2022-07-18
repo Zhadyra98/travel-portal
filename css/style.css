@@ -460,6 +460,10 @@ input::placeholder {
   }
 }
 
+.popular_destinations {
+  padding-bottom: 80px;
+}
+
 .popular_destinations__content {
   text-align: center;
 }
@@ -495,7 +499,7 @@ input::placeholder {
 }
 
 .popular_destinations__slider__btns {
-  margin: 24px auto 80px;
+  margin: 24px auto auto;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -528,6 +532,90 @@ input::placeholder {
   margin: 0 auto;
   align-items: center;
   padding: 9.5px 31px;
+}
+
+.travel_stories__container {
+  text-align: center;
+  z-index: 2;
+}
+
+.travel_stories {
+  display: block;
+  position: relative;
+}
+.travel_stories::after {
+  content: "";
+  background: url(../img/travel_bg.png) no-repeat center;
+  background-size: cover;
+  opacity: 0.5;
+  top: 93px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.travel_stories__content {
+  margin: 80px auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.travel_story__content__item {
+  display: flex;
+  gap: 40px;
+}
+
+.travel_story__content__img {
+  box-shadow: 0px 4px 4px #0D606F;
+  border-radius: 16px;
+}
+
+.travel_story__content__block {
+  text-align: left;
+}
+
+.travel_story__content__block__heading {
+  font-family: "Aleo";
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  color: #0D606F;
+  margin-bottom: 24px;
+}
+
+.travel_story__content__block__paragraph {
+  font-family: "Aleo";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0D606F;
+}
+
+.travel_story__content__block__link {
+  font-family: "Aleo";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #0D606F;
+}
+
+.travel_strories__btn {
+  display: inline-block;
+  padding: 9.5px 31px;
+}
+
+.travel_strories__btn__text {
+  font-family: "Red Hat Text";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-left: 10px;
 }
 
 body {

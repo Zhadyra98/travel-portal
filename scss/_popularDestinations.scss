@@ -1,9 +1,12 @@
 .popular_destinations {
+    padding-bottom: 80px;
 }
 .popular_destinations__container {
+    
 }
 .popular_destinations__content {
     text-align: center;
+
 }
 .section__heading {
 }
@@ -42,7 +45,7 @@
 .popular_destinations__slider__btns {
 }
 .popular_destinations__slider__btns{
-    margin: 24px auto 80px;
+    margin: 24px auto auto;
     display: flex;
     flex-direction: column;
     gap: 40px;
