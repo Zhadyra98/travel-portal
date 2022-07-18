@@ -1,0 +1,101 @@
+.intro{
+    background: url(../img/intro_bg.png) no-repeat center;
+    background-size: cover;
+    padding-top: 122px;
+    padding-bottom: 221px;
+    @media(max-width: 767px){
+        background-image: url("../img/intro_bg_small.png");
+        padding-top: 142px;
+        padding-bottom: 61px;
+    }
+}
+.intro__content{
+    max-width: 892px;
+}
+.intro__heading{
+    font-family: 'Aleo';
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    margin-bottom: 46px;
+    color: #FFFFFF;
+    @media(max-width: 1230px){
+        font-size: 65px;
+        margin-bottom: 40px;
+    }
+    @media(max-width: 767px){
+        display: none;
+    }
+}
+.intro__text{
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 46px;
+    @media(max-width: 767px){
+        display: none;
+    }
+
+}
+
+.intro__search{
+    position: relative;
+}
+input {
+    outline: none;
+    height: 95px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    @media(max-width: 767px){
+        height: 48px;
+    }
+    
+}
+input::placeholder {
+    color: #F2785C;
+    font-family: Aleo;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    padding-left: 41px;
+
+    @media(max-width: 767px){
+        font-size: 14px;
+        line-height: 17px;
+        padding-left: 6px;
+    }
+}
+.intro__btn {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 2;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transform: translateX(2px);
+    padding: 13.5px 32.5px;
+    @media(max-width: 767px){
+        top: 9px;
+        right: 9px;
+        padding: 7.5px 9px;
+    }
+}
+.intro__btn__text {
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    @media(max-width: 767px){
+        font-size: 11px;
+        line-height: 15px;
+    }
+}
+
+

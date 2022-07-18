@@ -1,9 +1,14 @@
-.header{
-    background: rgba(242, 120, 92, 0.7);
+.header{//запомнить эти свойства хэдера
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
     @media(max-width: 767px){
         margin-top: 43px;
-        background: rgba(242, 120, 92, 0.1);
+        background-color:transparent;
         box-shadow: none;
     }
 }
@@ -103,9 +108,11 @@
     background-color: #0D606F;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
+}
+.header__button{
     padding: 10px 30px;
 }
-.button__text{
+.header__btn__text{
     font-family: 'Red Hat Text';
     font-weight: 500;
     font-size: 16px;
