@@ -1,34 +1,80 @@
 .popular_destinations {
     padding-bottom: 80px;
     text-align: center;
+    @media(max-width: 992px){
+        padding-bottom: 20px;
+    }
 }
 .popular_destinations__slider__items {
     transition: all ease 2s;
     text-align: center;
     align-items:center;
     margin: 46px auto auto;
-    width: 1440px;
+    max-width: 1440px;
+    max-height: 800px;
     display: flex;
     gap: 60px;
     position: relative;
+    @media(max-width: 1300px){
+        gap: 30px;
+    }
+    @media(max-width: 992px){
+        margin: 20px auto auto;
+        position: relative;
+        z-index: -1;
+    }
+}
+.popular_destinations__slider__item{
+    position: relative;
+    @media(max-width: 992px){
+        position: absolute;
+        left:50%;
+        top: 0;
+        margin-left:-180px;
+    }
 }
 .center {
-    left: -540px;    
+    left: -540px;   
+    @media(max-width: 1300px){
+        left: calc(-750px + 210 * ((100vw - 993px) / (1300 - 993)));
+    } 
+    @media(max-width: 992px){
+        left: 0;
+    }
 }
 .left {
     left: 320px;
+    @media(max-width: 1300px){
+        left: calc(20px + 300 * ((100vw - 993px) / (1300 - 993)));
+    }
+    @media(max-width: 992px){
+        left: 0;
+    }
 }
 .right {
     left: -1400px;
+    @media(max-width: 1300px){
+        left: calc(-1450px + 50 * ((100vw - 993px) / (1300 - 993)));
+    }
+    @media(max-width: 992px){
+        left: 0;
+    }
 }
 .hidden {
     display: none;
 }
 .popular_destinations__slider__img {
     border-radius: 16px;
+    @media(max-width: 992px){
+        display: none;
+    }
 }
-.popular_destinations__slider__item{
-    position: relative;
+.popular_destinations__slider__img__sm{
+    display: none;
+    @media(max-width: 992px){
+        display: block;
+        border-radius: 16px;
+    }
 }
 .popular_destinations__slider__text {
     position: absolute;
@@ -40,12 +86,20 @@
     font-size: 32px;
     line-height: 42px;
     color: #FFFFFF;
+    @media(max-width: 992px){
+        display: none;
+    }
 }
 .popular_destinations__slider__btns{
     margin: 24px auto auto;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    @media(max-width: 992px){
+        margin-top: 190px;
+        z-index: 999;
+        gap: 22px;
+    }
 }
 .dot{
     width: 20px;
@@ -53,12 +107,21 @@
     background: rgba(242, 120, 92, 0.5);
     border-radius: 10px;
     transition: all ease 2s;
+    @media(max-width: 992px){
+        z-index: 999;
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+    }
 }
 .active__dot{
     background:#F2785C;
 }
 .dot1, .dot2 {
     margin-right: 10px;
+    @media(max-width: 992px){
+        margin-right: 6px;
+    }
 }
 .btn_wrapper{
     display: inline-block;
@@ -69,6 +132,11 @@
     font-size: 24px;
     line-height: 32px;
     color: #FFFFFF;
+    @media(max-width: 992px){
+        font-size: 11px;
+        line-height: 15px;
+    }
+
 }
 .destinations__btn{
     margin: 0 auto;
@@ -76,4 +144,14 @@
     align-items: center;
     padding: 9.5px 31px;
     gap: 10px;
+    @media(max-width: 992px){
+        gap: 6px;
+        padding: 7.5px 12px;
+    }
+}
+.btn__icon img{
+    @media(max-width: 992px){
+        width: 10px;
+        height: 10px;
+    }
 }

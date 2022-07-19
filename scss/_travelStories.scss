@@ -27,6 +27,7 @@
 .travel_story__content__item {
     display: flex;
     gap: 40px;
+
 }
 .travel_story__content__img {
     box-shadow: (0px 4px 4px #0D606F);
@@ -64,6 +65,10 @@
     align-items: center;
     padding: 9.5px 31px;
     gap: 10px;
+    @media(max-width: 992px){
+        gap: 6px;
+        padding: 7.5px 12px;
+    }
     
 }
 .travel_strories__btn__text {
@@ -72,5 +77,8 @@
     font-size: 24px;
     line-height: 32px;
     color: #FFFFFF;
-    margin-left: 10px;
+    @media(max-width: 992px){
+        font-size: 11px;
+        line-height: 15px;
+    }
 }
