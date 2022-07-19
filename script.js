@@ -17,25 +17,32 @@ document.querySelectorAll(".menu__link")
 
 /* =========================Slider ============================*/
 
-let slides = document.querySelectorAll('.single__slide');
-let slider = [];
-for(let i=0; i<slides.length; i++){
-    slider[i] = slides[i].src;
-    slides[i].remove();
-}
-console.log(slider);
+const ITEM_LEFT = document.querySelector("#item-left");
+const ITEM_RIGHT = document.querySelector("#item-right");
+const ITEM_CENTER = document.querySelector("#item-center");
+const CAROUSEL = document.querySelector("#carousel");
+const DOTS = document.querySelectorAll(".dot");
 
-let step = 0;
-let offset = 0;
-
-function draw() {
-    let img = document.createElement('img');
-    img.src = slider[step];
-    img.classList.add('single-slide');
-    img.style.left = offset*860 +'px';
-    document.querySelector('.slide').append(img);
-    step++;
-    offset=1;
-}
-
-draw();draw();
+ITEM_LEFT.addEventListener("click", () => {
+    CAROUSEL.classList.add('left');
+    CAROUSEL.classList.remove('center');
+    DOTS[0].classList.add('active__dot');
+    DOTS[1].classList.remove('active__dot');
+});
+ITEM_RIGHT.addEventListener("click", () => {
+    CAROUSEL.classList.add('right');
+    CAROUSEL.classList.remove('center');
+    DOTS[2].classList.add('active__dot');
+    DOTS[1].classList.remove('active__dot');
+});
+ITEM_CENTER.addEventListener("click", () => {
+    CAROUSEL.classList.add('center');
+    DOTS[1].classList.add('active__dot');
+    if(CAROUSEL.classList.contains('left')){
+        CAROUSEL.classList.remove('left');
+        DOTS[0].classList.remove('active__dot');
+    }else{
+        CAROUSEL.classList.remove('right');
+        DOTS[2].classList.remove('active__dot');
+    }
+});

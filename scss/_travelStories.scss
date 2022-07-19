@@ -5,9 +5,6 @@
 .travel_stories {
     display: block;
     position: relative;
-    // margin-top: 154px;
-    // padding-top: 40px;
-    // padding-bottom: 41px;
     &::after{
         content: "";
         background: url(../img/travel_bg.png) no-repeat center ;
@@ -62,8 +59,11 @@
     color: #0D606F;
 }
 .travel_strories__btn {
-    display: inline-block;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
     padding: 9.5px 31px;
+    gap: 10px;
     
 }
 .travel_strories__btn__text {

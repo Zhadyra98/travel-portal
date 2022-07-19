@@ -76,20 +76,20 @@
                 </div>
             </section>
             <section class="popular_destinations">
-                <div class="popular_destinations__container">
+                <div class="popular_destinations__ccontainer">
                     <div class="popular_destinations__content">
                         <h2 class="section__heading">POPULAR DESTINATIONS</h2>
                         <div class="popular_destinations__slider">
-                            <div class="popular_destinations__slider__items">
-                                <div class="popular_destinations__slider__item1 popular_destinations__slider__item">
+                            <div class="popular_destinations__slider__items center" id="carousel">
+                                <div class="popular_destinations__slider__item" id="item-left">
                                     <img class="popular_destinations__slider__img" src="./img/slider_img1.png" alt="Slider image of SPAIN">
                                     <p class="popular_destinations__slider__text">SPAIN</p>
                                 </div>
-                                <div class="popular_destinations__slider__item2 popular_destinations__slider__item">
+                                <div class="popular_destinations__slider__item" id="item-center">
                                     <img class="popular_destinations__slider__img" src="./img/slider_img2.png" alt="Slider image of Japan">
                                     <p class="popular_destinations__slider__text">JAPAN</p>
                                 </div>
-                                <div class="popular_destinations__slider__item3 popular_destinations__slider__item">
+                                <div class="popular_destinations__slider__item" id="item-right">
                                     <img class="popular_destinations__slider__img" src="./img/slider_img3.png" alt="Slider image of USA">
                                     <p class="popular_destinations__slider__text">USA</p>
                                 </div>
@@ -97,14 +97,18 @@
                             <div class="popular_destinations__slider__btns">
                                 <div class="dots">
                                     <button class="dot1 dot"></button>
-                                    <button class="dot2 dot"></button>
+                                    <button class="dot2 dot active__dot"></button>
                                     <button class="dot3 dot"></button>
                                 </div>
                                 <div class="btn destinations__btn">
-                                    <a href="" class="destinations__btn__text"><img src="./img/btn_arrow.svg">Find More</a>
+                                    <div class="btn__icon">
+                                        <img src="./img/btn_arrow.svg">
+                                    </div>
+                                    <div class="btn__text">
+                                        <a href="" class="destinations__btn__text">Find More</a>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -164,12 +168,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="btn travel_strories__btn">
-                        <img src="./img/btn_arrow.svg"><a href="" class="travel_strories__btn__text">See More</a>
+                    <div class="btn_wrapper">
+                        <div class="btn travel_strories__btn">
+                            <div class="btn__icon">
+                                <img src="./img/btn_arrow.svg">
+                            </div>
+                            <div class="btn__text">
+                                <a href="" class="travel_strories__btn__text">See More</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
+        <footer class="footer">
+            <div class="footer__container">
+                
+            </div>
+        </footer>
     </div>
     <script src="./script.js"></script>
 </body>
