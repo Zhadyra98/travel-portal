@@ -16,22 +16,48 @@
         right: 0;
         position: absolute;
         z-index: -1; 
+        @media(max-width: 767px){
+            top: 29px;
+        }
     }
 }
 .travel_stories__content {
     margin: 80px auto 40px; 
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 30px;
+    @media(max-width: 1230px){
+        gap: calc(15px + 15 * ((100vw - 390px) / (1230 - 390)));
+    }
+    @media(max-width: 767px){
+        margin: 10px auto 10px; 
+    }
 }
 .travel_story__content__item {
     display: flex;
     gap: 40px;
-
+    @media(max-width: 1230px){
+        gap: calc(10px + 30 * ((100vw - 390px) / (1230 - 390)));
+    }
+    @media(max-width: 391px){
+        max-height: 130px;
+    }
 }
 .travel_story__content__img {
     box-shadow: (0px 4px 4px #0D606F);
     border-radius: 16px;
+    @media(max-width: 767px){
+        display: none;
+    }
+}
+.travel_story__content__img__sm {
+    display: none;
+    @media(max-width: 767px){
+        display: block;
+        box-shadow: (0px 4px 4px #0D606F);
+        border-radius: 16px;
+    }
 }
 .travel_story__content__block {
     text-align: left;
@@ -43,6 +69,11 @@
     line-height: 42px;
     color: #0D606F;
     margin-bottom: 24px;
+    @media(max-width: 1230px){
+        font-size: calc(11px + 24 * ((100vw - 390px) / (1230 - 390)));
+        line-height: calc(13px + 29 * ((100vw - 390px) / (1230 - 390)));
+        margin-bottom: calc(10px + 32 * ((100vw - 390px) / (1230 - 390)));
+    }
 }
 .travel_story__content__block__paragraph{
     font-family: 'Aleo';
@@ -50,6 +81,25 @@
     font-size: 20px;
     line-height: 24px;
     color: #0D606F;
+    @media(max-width: 1230px){
+        font-size: calc(9px + 11 * ((100vw - 390px) / (1230 - 390)));
+        line-height: calc(11px + 13 * ((100vw - 390px) / (1230 - 390)));
+    }
+    @media(max-width: 767px){
+        display: none;
+    }
+}
+.travel_story__content__block__paragraph__sm{
+    display: none;
+    @media(max-width: 767px){
+        display: block;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 11px;
+        color: #0D606F;
+    }
 }
 .travel_story__content__block__link {
     font-family: 'Aleo';
@@ -58,6 +108,10 @@
     line-height: 24px;
     text-decoration-line: underline;
     color: #0D606F;
+    @media(max-width: 1230px){
+        font-size: calc(9px + 11 * ((100vw - 390px) / (1230 - 390)));
+        line-height: calc(11px + 13 * ((100vw - 390px) / (1230 - 390)));
+    }
 }
 .travel_strories__btn {
     margin: 0 auto;
