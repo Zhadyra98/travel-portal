@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,7 +32,7 @@
                     </div>
                 </div>
                 <div class="header__button btn">
-                    <a href="" class="header__btn__text">Login</a>
+                    <a href="#popup1" class="header__btn__text">Login</a>
                 </div>
             </div>
         </header>
@@ -105,7 +106,7 @@
                                 </div>
                                 <div class="btn destinations__btn">
                                     <div class="btn__icon">
-                                        <img src="./img/btn_arrow.svg">
+                                        <img src="./img/btn_arrow.svg" alt="arrow btn">
                                     </div>
                                     <div class="btn__text">
                                         <a href="" class="destinations__btn__text">Find More</a>
@@ -190,7 +191,7 @@
                     <div class="btn_wrapper">
                         <div class="btn travel_strories__btn">
                             <div class="btn__icon">
-                                <img src="./img/btn_arrow.svg">
+                                <img src="./img/btn_arrow.svg" alt="arrow btn">
                             </div>
                             <div class="btn__text">
                                 <a href="" class="travel_strories__btn__text">See More</a>
@@ -207,5 +208,64 @@
         </footer>
     </div>
     <script src="./script.js"></script>
+    <div id="popup1" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__title">Log in to your account</div>
+                <button class="facebook__sign__in">
+                    <img src="./img/facebook.svg" alt="facebook logo">
+                    Sign In with Facebook
+                </button>
+                <button class="google__sign__in">
+                    <img src="./img/Google_logo.svg" alt="google logo">
+                    Sign In with Google
+                </button>
+                <div class="line_block">
+                    <img src="./img/Line.svg" alt="Line with 260px length">
+                    <span>or</span>
+                    <img src="./img/Line.svg" alt="Line with 260px length">
+                </div>
+                <form class="popup__form" action="/action_page.php">
+                    <label class = "popup__label" for="fname">First name:</label><br>
+                    <input class = "popup__input firstName__input" type="text" id="fname" name="fname"><br>
+                    <label class = "popup__label" for="lname">Last name:</label><br>
+                    <input class = "popup__input" type="text" id="lname" name="lname"><br><br>
+                </form>
+                <button class="sign__in">
+                    Sign In
+                </button>
+                <br/>
+                <a href="" class="forgot__password">Forgot Your Password?</a>
+                <div class="popup__footer">
+                    <img src="./img/Line_560px.svg" alt="560px big line">
+                    <span class="popup__footer__span">Don’t have an account? <a href="#popup2" class="popup__footer__span__a">Register</a></span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="popup2" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__title">Create account</div>
+                <form class="popup__form" action="/action_page.php">
+                    <label class = "popup__label" for="fname">First name:</label><br>
+                    <input class = "popup__input firstName__input" type="text" id="fname" name="fname"><br>
+                    <label class = "popup__label" for="lname">Last name:</label><br>
+                    <input class = "popup__input" type="text" id="lname" name="lname"><br><br>
+                </form>
+                <button class="sign__in">
+                    Sign Up
+                </button>
+                <div class="popup__footer">
+                    <img src="./img/Line_560px.svg" alt="560px big line">
+                    <span class="popup__footer__span">Already have an account? <a href="#popup1" class="popup__footer__span__a">Log in</a></span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 </body>
 </html>
